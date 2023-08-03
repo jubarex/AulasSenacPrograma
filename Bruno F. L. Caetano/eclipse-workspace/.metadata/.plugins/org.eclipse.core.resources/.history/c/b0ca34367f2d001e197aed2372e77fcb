@@ -1,0 +1,28 @@
+package aula2807;
+
+import java.util.Scanner;
+
+public class exercicio4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Informe o número de colunas");
+		int colunas = teclado.nextInt();
+        System.out.println("Informe o número de linhas");
+		int linhas = teclado.nextInt();		
+		
+		int[][] matriz = new int[0][0];
+		
+		for(int linha = 0; linhas < matriz.length; linhas++) {
+			for (int colunas = 0; colunas < matriz.length; colunas++) {
+				matriz[linha][colunas] = linhas + colunas;
+				
+			}
+		}
+		
+		
+	}
+
+}

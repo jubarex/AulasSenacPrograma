@@ -1,0 +1,42 @@
+package aula2707;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class exercicio11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+			Scanner Teclado = new Scanner(System.in);
+			System.out.println("Informe o tamanho do vetor");
+			int tamanho = Teclado.nextInt();
+		    int arr[] = new int[tamanho];
+		    int soma = 0;
+		    
+		    for(int i = 0; i < tamanho; i++); {
+		    	System.out.println("Informe um numero");
+		    	arr[1] = Teclado.nextInt();		    
+		        soma = arr[1] + soma;
+		    }
+		    
+		    
+		    System.out.println("A soma dos valores é " + soma);
+
+            System.out.println(Arrays.toString(arr));
+            
+            
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,41 @@
+package aula2707;
+
+import java.util.Scanner;
+public class exercicio1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		// usuario insere tamanho do vetor
+		// inserir cada valor do vetor
+		// mostrar a soma de todos os valores do vetor
+		
+		
+		Scanner Teclado = new Scanner(System.in);
+		
+		int ordem = Teclado.nextInt();
+		int vetorNumerosInteiros [] = new int[ordem];
+		
+		System.out.println("Tamanho do vetor" + ordem);
+		System.out.println(".lenght: " + vetorNumerosInteiros.length);
+		
+		
+		// usuario inserir cada valor do vetor
+		Scanner Teclado2 = new Scanner(System.in);
+		int valorInseridoAtual = Teclado2.nextInt();
+		
+		// mostrar a soma de todos os valores do vetor
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
