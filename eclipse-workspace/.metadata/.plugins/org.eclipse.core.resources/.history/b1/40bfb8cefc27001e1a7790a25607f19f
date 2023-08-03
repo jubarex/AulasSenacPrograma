@@ -1,0 +1,14 @@
+package projeto1;
+
+public class kk {
+
+	public static void main(String[] args) {
+ 
+		try {arroz();
+		}catch (exception e) {
+			e printStackTrace();
+		}
+		System.out.println("continuou msm com erro");
+	}
+
+}

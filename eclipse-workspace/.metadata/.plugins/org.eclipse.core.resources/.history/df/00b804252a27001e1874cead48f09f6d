@@ -1,0 +1,22 @@
+package projeto1;
+
+import java.util.Scanner;
+
+public class q1 {
+	
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+	
+	System.out.println("O primeiro macaco sorri?");
+	String mcc1 = teclado.nextLine();
+	System.out.println("O segundo macaco sorri?");
+	String mcc2 = teclado.nextLine();
+	if(mcc1.equals("sim") || mcc2.equals("sim")) {
+		System.out.println("corra, tem um macaco atrás de você");
+	}if(mcc1.equals("sim") && mcc2.equals("sim")) {
+		System.out.println("corra, tem dois macacos atrás de você");
+	}else {
+		System.out.println("Esta tudo tranquilo, fique tranquilo");
+	}
+	}
+}

@@ -1,0 +1,76 @@
+package projeto1;
+
+import java.util.Scanner;
+
+public class p2 {
+
+	//1
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Informe um numero");
+
+	    int val1 = teclado.nextInt();
+
+	    System.out.println("Informe outro numero");
+
+	    int val2 = teclado.nextInt();
+
+	    
+
+	    if (val1 > val2) {
+
+	        System.out.println("O maior valor é de: " +val1);
+
+	    }
+
+	    if (val2 > val1) {
+
+	        System.out.println("O maior valor é de: " +val2);
+
+	    }
+
+	    else {
+
+	        System.out.println("Ambos valores são iguais");
+
+	    }
+
+	    //2
+	    System.out.println("Informe um numero");
+
+	    int val3 = teclado.nextInt();
+	    
+	    if (val3 >= 0) {
+
+	        System.out.println("Positivo");
+
+	    }
+
+	    if (val3 <= 0 ) {
+
+	        System.out.println("Negativo");
+
+	    }
+	    
+	    //3
+	    System.out.println("Informe um numero");
+
+	    String val4 = teclado.nextLine();
+	    
+	    if (val4 == "F") {
+
+	        System.out.println("Female");
+
+	    }
+
+	    if (val4 == "M" ) {
+
+	        System.out.println("Maculin");
+
+	    }
+	    
+
+	    }
+
+	}

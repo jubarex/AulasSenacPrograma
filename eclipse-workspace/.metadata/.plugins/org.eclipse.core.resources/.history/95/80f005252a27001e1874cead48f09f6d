@@ -1,0 +1,14 @@
+package projeto1;
+
+public class qperigocaco {
+
+	public qperigocaco() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
