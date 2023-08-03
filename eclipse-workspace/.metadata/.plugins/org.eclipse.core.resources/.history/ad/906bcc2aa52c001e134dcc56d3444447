@@ -1,0 +1,19 @@
+package projeto1;
+
+import java.util.Scanner;
+
+public class pp1 {
+	public static void main(String[] args) {
+	Scanner teclado = new Scanner(System.in);
+	
+	System.out.println("Diga alguns valores");
+	int[] a = new int [5];
+	a[0] =  teclado.nextInt();
+	a[1] =  teclado.nextInt();
+	a[2] =  teclado.nextInt();
+	a[3] =  teclado.nextInt();
+	a[4] =  teclado.nextInt();
+	System.out.println();
+
+	}
+}

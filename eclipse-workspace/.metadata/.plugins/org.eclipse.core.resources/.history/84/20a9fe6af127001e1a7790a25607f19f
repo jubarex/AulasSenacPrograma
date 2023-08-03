@@ -1,0 +1,37 @@
+package projeto2;
+
+ 
+
+public class v1 {
+
+ 
+
+    public static void main(String[] args) {
+
+         System.out.println(daod(19f));
+
+            System.out.println(daod(12f));
+
+            System.out.println(daod(26f));
+
+        }
+
+ 
+
+        public static float daod(float n) {
+
+            float d = Math.abs(n - 21);
+
+            if (n > 21) {
+
+                return d * 2;
+
+            } else {
+
+                return d;
+
+            }
+
+        }
+
+}

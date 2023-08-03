@@ -1,0 +1,43 @@
+package projeto1;
+
+import java.util.Scanner;
+
+public class p3 {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		//1
+		
+		int n1, n2;
+		 
+		System.out.println("informe a base");
+	    n1 = teclado.nextInt();
+
+	    System.out.println("informe a altura");
+	    n2 = teclado.nextInt();
+	    
+	    int m = (n1 * n2);
+	    
+	    System.out.println("a área do retângulo é igual a " + m);
+	    
+	    //2
+	    
+	    int n3;
+		 
+		System.out.println("informe a sua idade");
+	    n1 = teclado.nextInt();
+
+	    System.out.println("informe o mês em que você nasceu");
+	    n2 = teclado.nextInt();
+	    
+	    System.out.println("informe o dia em que você nasceu");
+	    n3 = teclado.nextInt();
+	    
+	    int dias = (n1 * 365) + (n2 * 30) + n3;
+	    
+	    System.out.println("a sua idade em dias é " + dias);
+	    
+	}
+
+}
