@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class SistemaPadrao {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	private static void sistemaPrincipal() {
+		boolean executar = true;
+		
+		while(executar) {
+			Scanner teclado = new Scanner(System.in);
+			
+			System.out.println("O sistema está rodando!");
+			
+			System.out.println("Veja nossas opções: ");
+			System.out.println("1: Somar");
+			System.out.println("2: Multiplicar");
+			switch (teclado.nextInt();) {
+			case value:
+				
+				break;
+
+			default:
+				break;
+			} 
+						
+			
+		}
+
+	}
+
+}

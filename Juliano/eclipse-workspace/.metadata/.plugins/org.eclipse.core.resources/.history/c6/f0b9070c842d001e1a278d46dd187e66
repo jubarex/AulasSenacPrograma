@@ -1,0 +1,63 @@
+package vetorMatriz;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class somarMatriz {
+
+	public static void main(String[] args) {
+	
+		int[][] matriz = new int[3][3];
+		
+		// usuario insere o tamanho da matriz
+		// usuario insere valor de cada elemento
+		// sistema SOMA cada um dos valores
+		// sistema mostra a SOMA total
+		for (int linha = 0; linha < matriz.length; linha++) {
+		      for(int coluna = 0; coluna < matriz[0].length; coluna++){
+		       matriz[linha][coluna] = linha * coluna;
+		    }
+		}
+		
+		
+		for (int linha = 0; linha < matriz.length; linha++) {
+			for (int coluna = 0; coluna < matriz[0].length; coluna++) {
+				System.out.print(matriz[linha][coluna] + " ");
+			}
+			System.out.println(" ");
+		}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+}

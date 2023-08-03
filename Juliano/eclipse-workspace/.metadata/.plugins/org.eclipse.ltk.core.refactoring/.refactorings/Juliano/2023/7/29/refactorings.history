@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ExerciciosJuliano.verificadorPalindromo.java&apos; to &apos;VerificadorPalindromo.java&apos;&#x0D;&#x0A;- Original project: &apos;Juliano&apos;&#x0D;&#x0A;- Original element: &apos;ExerciciosJuliano.verificadorPalindromo.java&apos;&#x0D;&#x0A;- Renamed element: &apos;ExerciciosJuliano.VerificadorPalindromo.java&apos;" description="Rename compilation unit &apos;verificadorPalindromo.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;ExerciciosJuliano{verificadorPalindromo.java" name="VerificadorPalindromo.java" references="false" stamp="1689796072146" version="1.0"/>
+</session>

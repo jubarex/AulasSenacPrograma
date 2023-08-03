@@ -1,0 +1,19 @@
+package vetorMatriz;
+
+import java.util.Scanner;
+
+public class somaVetor2 {
+
+	public static void main(String[] args) {
+		
+		// usuario inseri tamanho vetor
+		Scanner teclado = new Scanner(System.in);
+		int tamanho = teclado.nextInt();
+		int vetorNumerosInteiros [] = new int[tamanho]; 
+		
+		// inserir cada valor do vetor
+		// mostrar a soma de todos valor do vetor
+
+	}
+
+}

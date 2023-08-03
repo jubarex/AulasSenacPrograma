@@ -1,0 +1,17 @@
+
+public class SistemaPadrao {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	private static void sistemaPrincipal() {
+		boolean executar = true;
+		
+		while(executar) {
+			
+		}
+
+	}
+
+}

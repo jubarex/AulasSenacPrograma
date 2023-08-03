@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class SistemaPadrao {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	private static void sistemaPrincipal() {
+		boolean executar = true;
+		
+		float resultado = 0;
+		
+		while(executar) {
+			Scanner teclado = new Scanner(System.in);
+			
+			System.out.println("O sistema está rodando!");
+			
+			System.out.println("Veja nossas opções: ");
+			System.out.println("1: Somar");
+			System.out.println("2: Multiplicar");
+			int opcaoEscolhida = teclado.nextInt();
+			switch (opcaoEscolhida) {
+			case 1:
+				int opcaoEscolhidaSoma = 0;
+				System.out.println("1: Quer usar valores novos?");
+				System.out.println("2: Ou usar o antigo?");
+				opcaoEscolhidaSoma = teclado.nextInt();
+				if(opcaoEscolhidaSoma == 1) {
+					System.out.println("Insira o número 1:");
+					float num1Soma = teclado.nextFloat();
+					System.out.println("Insira o número 2");
+					float num2Soma = teclado.nextFloat();
+					resultado = num1Soma + num2Soma;
+				} else if(opcaoEscolhidaSoma == 2) {
+					System.out.println("Insira o número 1:");
+					float num1Soma = teclado.nextFloat();
+					resultado += num1Soma;
+					
+				} else {
+					System.out.println("Você inseriu uma opção inválida.");
+				}
+				break;
+			case 2:
+				
+				break;
+
+			default:
+				System.out.println("Você inseriu uma opção inválida.");
+				break;
+			} 
+						
+			
+		}
+
+	}
+
+}
