@@ -1,0 +1,29 @@
+package Atividade;
+
+import java.util.Scanner;
+
+public class NaoSei2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+// declando novo scanner com o nome teclado 
+		Scanner teclado = new Scanner(System.in);
+		
+		//saida na tela  "texto"
+		System.out.println("Insira o tamanho do vetor:");
+		
+		//declarando variavel do tipo INT com o nome ORDEM
+		//que RECEBE o valor que o usuario inserir
+		int ordem = teclado.nextInt();
+		
+		//declarando uma variavel VETOR do tipo INT
+		//com o nome vetorNumerosInteiros
+		//                           que RECEBE uma nova instancia
+		//                           "novo vetor" de tamanho ORDEM
+		int[] vetorNumerosInteiros = new int[ordem];
+		
+		// saida na tela   "texto"         CONCATENA  com a VARIAVEL ordem
+		System.out.println("Ordem do vetor: "+ ordem); 
+	}
+
+}
