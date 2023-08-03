@@ -1,0 +1,34 @@
+package aula2807;
+
+import java.util.Scanner;
+
+public class exercicio4 {
+
+	public static int[][] main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Informe o número de colunas");
+		int colunas = teclado.nextInt();
+		System.out.println("Informe o número de linhas");
+		int linhas = teclado.nextInt();
+
+		int[][] matriz = new int[linhas][colunas];
+
+		for (int linhas2 = 0; linhas2 < matriz.length; linhas2++) {
+			for (int colunas2 = 0; colunas2 < matriz[0].length; colunas2++) {
+
+				if(linhas2 == colunas2) {
+					matriz[linhas2][colunas2] = 1; // Elementos da diagonal principal são iguais a 1.
+                } else {
+                    matriz[linhas2][colunas2] = 0; // Demais elementos são iguais a 0.
+                }
+					
+				
+				}
+				
+			  
+		}
+          return matriz;
+	}
+}

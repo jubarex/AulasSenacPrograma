@@ -1,0 +1,10 @@
+INDEX VERSION 1.134+C:\Users\bruno.1975\Documents\GitHub\AulasSenacPrograma\Bruno F. L. Caetano\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+39534408.index
+482049863.index
+325731528.index
+371544653.index
+401029242.index
+313011967.index
+2685739191.index
+455026711.index
+4159866451.index

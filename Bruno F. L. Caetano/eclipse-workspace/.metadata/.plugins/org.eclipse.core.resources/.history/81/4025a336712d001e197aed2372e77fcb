@@ -1,0 +1,51 @@
+package aula2807;
+
+import java.util.Scanner;
+
+public class exercicio2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+       Scanner teclado = new Scanner(System.in);
+       System.out.println("Informe o tamanho do vetor");
+       int tamanho = teclado.nextInt();
+      teclado.nextLine(); //pular linha
+      
+      
+       
+      String vetor[] = new String[tamanho];
+      for (int i = 0; i < tamanho; i++) {
+          System.out.print("Digite a string " + (i + 1) + ": ");
+          vetor[i] = teclado.nextLine();
+	}
+      
+      
+      System.out.println("Digite o valor da pesquisa");
+      String pesq = teclado.next();
+      
+      
+      int posicao = buscarValor(vetor, pesq);
+      
+      if(posicao != -1) {
+    	  System.out.println("A posição é" + posicao);
+      } else { 
+    		  System.out.println("O valor não foi encontrado");
+    	  }
+    
+    	 
+      }
+      
+}
+
+	public static int buscarValor(String[] vetor, String pesq) {
+		for(int i = 0; i < vetor.length; i++) {
+			if (vetor.equals(pesq)) {
+					return i;
+					
+		}
+	}
+		return -1;
+	
+	}
+}
