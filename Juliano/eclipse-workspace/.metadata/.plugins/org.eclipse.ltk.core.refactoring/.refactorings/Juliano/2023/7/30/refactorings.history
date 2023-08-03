@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;vetorMatriz.ex1.java&apos; to &apos;MediaVetor.java&apos;&#x0D;&#x0A;- Original project: &apos;Juliano&apos;&#x0D;&#x0A;- Original element: &apos;vetorMatriz.ex1.java&apos;&#x0D;&#x0A;- Renamed element: &apos;vetorMatriz.MediaVetor.java&apos;" description="Rename compilation unit &apos;ex1.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;vetorMatriz{ex1.java" name="MediaVetor.java" references="false" stamp="1690388123901" version="1.0"/>
+</session>
