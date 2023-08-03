@@ -1,0 +1,37 @@
+package novaPackage;
+
+import java.util.Scanner;
+
+public class SomaVetores {
+
+	public static void main(String[] args) {
+		Scanner arroz = new Scanner(System.in);
+
+		// solicitar ao usuário o tamanho do vetor
+		System.out.println("digite o tamanho do vetor");
+		int tamanho = arroz.nextInt();
+
+		// criaro vetor com o tamanho informado
+		int[] vetor = new int[tamanho];
+
+		// preencher o vetor com os elemntos fornecidos pelo usuário
+		//System.out.println("digite os elementos do vetor");
+		// for (int i = 0; i <
+
+		int soma = 0;
+		// i++
+		//for (int i = 0; i < vetor.length; i = i + 1) {
+
+		//}
+		
+
+		System.out.println(soma);
+		soma++;
+		System.out.println(soma);
+		
+		System.out.println(soma);
+		System.out.println(soma);
+
+	}
+
+}

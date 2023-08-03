@@ -1,0 +1,22 @@
+package atvd1;
+
+import java.util.Scanner;
+
+public class aat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         Scanner teclado = new Scanner(System.in);
+         int ordem = teclado.nextInt();
+         int[] vetorNumerosInteiros = new int[ordem];
+         System.out.println("ordem do vetor:" + ordem);
+         System.out.println("lenght:" + vetorNumerosInteiros.lenght);
+         
+         
+         // usuario inserir cada valor do vetor 
+           Scanner arroz = new Scanner(System.in);
+           int valorInseridoAtual = arroz.nextInt();
+           
+           // mostrar a soma de todos valor do vetor
+
+}
