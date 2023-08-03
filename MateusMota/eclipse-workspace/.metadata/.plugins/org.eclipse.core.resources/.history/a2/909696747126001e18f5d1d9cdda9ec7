@@ -1,0 +1,22 @@
+package ex01;
+
+import java.util.Scanner;
+public class aulaAula {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner Scanner = new Scanner(System.in);
+		System.out.println("Duas rodas ou quatro?");
+		int duas = Scanner.nextInt();
+		int quatro = Scanner.nextInt();
+		
+		if (duas != quatro) {
+			System.out.println("é moto");
+		} else {
+		System.out.println(quatro +  "=  é carro ");
+		}
+
+	}
+
+}
