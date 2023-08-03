@@ -1,0 +1,33 @@
+package vetor27_07;
+
+import java.util.Scanner;
+
+public class atividade1 {
+
+	public static void main(String[] args) {
+		// declarando novo escanercom o nome teclado
+		Scanner teclado = new Scanner(System.in);
+		// saida da tela    "texto"
+		System.out.println("insira o tamanho do vetor: ");
+		
+		 //declarando vareavel do tipo INT com o nome ORDEM
+		//que RECEBE o valor que o usuario inserir
+		int ordem = teclado.nextInt();
+		
+		//declarando uma vareavel VETOR com tipo INT
+		//com o nome vetorNumerosInteiros
+		//								que RECEBER uma nova istancia
+		//								"nome vetor" de tamnho de ORDEM
+		int vetorNumerosInteiros[] = new int[ordem];
+		
+		//saida na tela    "texto"            CONCATENA com a VAREAVEL ORDEM
+ 		System.out.println("Tamanho do vetor: " + ordem);
+		System.out.println(".length: " + vetorNumerosInteiros.length);
+
+		// usuariosinserir cada valor de vetor
+
+		Scanner arroz = new Scanner(System.in);
+		int valorInseridoAtual = arroz.nextInt();
+	}
+
+}

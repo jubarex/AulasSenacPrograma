@@ -1,0 +1,10 @@
+package banana_1;
+public class bamama {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Meu primeiro programa em JAVA");
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package atividade_1;
+import java.util.Scanner;
+
+public class At1 {
+	 Scanner teclado = new Scanner(System.in);
+	 private void sysout() {
+		// TODO Auto-generated method stub
+		 System.out.println("digite a altura");
+		 int altura = teclado.nextInt();
+		 
+		 System.out.println("digite a largura");
+		 int largura = teclado.nextInt();
+		 
+		 
+		 
+
+	}
+
+}

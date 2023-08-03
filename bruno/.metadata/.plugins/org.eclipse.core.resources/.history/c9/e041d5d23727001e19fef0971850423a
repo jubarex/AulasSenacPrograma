@@ -1,0 +1,31 @@
+package atividade_20_07;
+import java.util.Scanner;
+public class atividade {
+
+	
+	
+	public static void main(String[] args) {
+		int somar, subitrair, multiplicar, dividir;
+		
+		// TODO Auto-generated method stub
+		
+	  Scanner teclado = new Scanner(System.in); 
+
+	  System.out.println(somar(1,2,3));
+	  
+	}
+    private static float somar(float banana, float tangerina, float abacate) {
+	float arroz = banana + tangerina + abacate;
+	
+    	
+    	
+    	
+    	
+    	return arroz;	
+    	
+		
+		
+		
+		
+    }
+}
