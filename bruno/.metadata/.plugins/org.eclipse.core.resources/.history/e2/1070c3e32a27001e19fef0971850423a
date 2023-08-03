@@ -1,0 +1,42 @@
+package atividade_20_07;
+import java.util.Scanner;
+public class perigoCaco {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		
+		boolean entreadaUm = teclado.nextBoolean();
+		boolean entreadaDois = teclado.nextBoolean();
+		
+		
+		System.out.println("O macaco A está sorrindo? True ou False");
+		boolean entradaUm = teclado.nextBoolean();
+		
+		System.out.println("O macaco A está sorrindo? True ou False");
+		boolean entradaDois = teclado.nextBoolean();
+		
+		System.out.println("O macaco é perigoso: ");
+		System.out.println(perigoCaco(entradaUm, entradaDois)); //usuario decide
+		
+		System.out.println(perigoCaco(true, true));
+		System.out.println(perigoCaco(true, false));
+		System.out.println(perigoCaco(false, true));
+		System.out.println(perigoCaco(false, false));
+		
+
+	}
+     public static boolean perigoCaco(boolean aSorriso, boolean bSorriso) {
+		if (aSorriso == true && bSorriso == true) {
+			return true;
+		}else if (aSorriso == false && bSorriso == false) {
+			return true;
+			
+		} else {
+			
+			return false;
+		
+		} 
+    	 
+     }
+}

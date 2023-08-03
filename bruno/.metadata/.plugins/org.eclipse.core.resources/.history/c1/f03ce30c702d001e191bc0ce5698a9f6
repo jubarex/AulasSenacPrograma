@@ -1,0 +1,14 @@
+package vetor28_07;
+
+import java.util.Scanner;
+
+public class atividade {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+         System.out.println("Digite um número");
+     	int ordem = teclado.nextInt();
+     	int vetorNumerosInteiros[] = new int[ordem];
+	}
+
+}

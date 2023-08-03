@@ -1,0 +1,20 @@
+package atividade_1;
+import java.util.Scanner;
+public class At6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		double salario, vendas, desconto1 = 0.03, desconto2 = 0.05;
+		
+		System.out.println("Informe seu salario");
+		salario = teclado.nextDouble();
+		System.out.println("Total de vendas");
+		vendas = teclado.nextDouble();
+		double v1 = vendas - 1500;
+		System.out.println("v1");
+	  if(vendas <= )
+
+	}
+
+}
