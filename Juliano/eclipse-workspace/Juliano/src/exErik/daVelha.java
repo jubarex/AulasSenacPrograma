@@ -70,25 +70,31 @@ public class daVelha {
 		int linha = sc.nextInt();
 		System.out.println("Digite a coluna:\n");
 		int coluna = sc.nextInt();
-		if (jogadorAtual == 1) {
-			arr[linha][coluna] = jogador1.tipo;
+		if(arr[linha][coluna] != "") {
+			System.out.println("Você não pode jogar onde já há peças!");
+			jogarAtual();
 		} else {
-			arr[linha][coluna] = jogador2.tipo;
-		}
-		vencedor = checarVencedor();
-		if (vencedor == true) {
 			if (jogadorAtual == 1) {
-				System.out.println("O ganhador foi: " + jogador1.nome + "\n");
-				System.out.println("Deseja continuar jogando? 1 para sim|0 para não\n");
-				resetarVariaveis();
-				continuarJogando = sc.nextInt();
+				arr[linha][coluna] = jogador1.tipo;
 			} else {
-				System.out.println("O ganhador foi: " + jogador2.nome + "\n");
-				System.out.println("Deseja continuar jogando? 1 para sim|0 para não\n");
-				resetarVariaveis();
-				continuarJogando = sc.nextInt();
+				arr[linha][coluna] = jogador2.tipo;
 			}
+			vencedor = checarVencedor();
+			if (vencedor == true) {
+				if (jogadorAtual == 1) {
+					System.out.println("O ganhador foi: " + jogador1.nome + "\n");
+					System.out.println("Deseja continuar jogando? 1 para sim|0 para não\n");
+					resetarVariaveis();
+					continuarJogando = sc.nextInt();
+				} else {
+					System.out.println("O ganhador foi: " + jogador2.nome + "\n");
+					System.out.println("Deseja continuar jogando? 1 para sim|0 para não\n");
+					resetarVariaveis();
+					continuarJogando = sc.nextInt();
+				}
+			}	
 		}
+		
 	}
 
 	public static void mostrarNaTela() {
@@ -110,9 +116,7 @@ public class daVelha {
 	public static boolean checarVencedor() {
 		boolean vencedor = false;
 
-		if (arr[0][0].equals("X")) {
-			vencedor = true;
-		} else if ((arr[0][0].equals("X") && arr[1][1].equals("X") && arr[2][2].equals("X"))
+		 if ((arr[0][0].equals("X") && arr[1][1].equals("X") && arr[2][2].equals("X"))
 				|| (arr[0][0].equals("O") && arr[1][1].equals("O") && arr[2][2].equals("O"))) {
 			vencedor = true;
 		} else if ((arr[0][2].equals("X") && arr[1][1].equals("X") && arr[2][0].equals("X"))
