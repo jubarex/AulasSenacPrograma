@@ -1,0 +1,106 @@
+ CREATE TABLE IF NOT EXISTS Fichas (
+ numero_paciente int primary key auto_increment,
+ nome VARCHAR(255),
+ rg VARCHAR(14),
+ telefone varchar(16),
+ convenio varchar(14),
+ dataNascimento date, 
+ sexo char
+ );
+ 
+ CREATE TABLE IF NOT EXISTS Enderecos (
+idEndereco int primary key auto_increment,
+logradouro varchar(255),
+cep varchar(14),
+numero varchar(55),
+bairro varchar(255),
+cidade varchar(255)
+ );
+ 
+  CREATE TABLE IF NOT EXISTS Consultas (
+numeroConsulta int primary key auto_increment,
+data date, 
+diagnostico text
+ );
+ 
+ CREATE TABLE IF NOT EXISTS Medicos (
+ CRM varchar(14) primary key, 
+ nome varchar(255)
+ );
+ 
+ CREATE TABLE IF NOT EXISTS Exames (
+ idExame int primary key auto_increment,
+ exame text,
+ data date
+ );
+ 
+ CREATE TABLE IF NOT EXISTS Ficha_Endereco(
+ idEndereco int,
+ idFicha int,
+ PRIMARY KEY (idEndereco, idFicha),
+ FOREIGN KEY (idEndereco)
+ REFERENCES Enderecos(idEndereco),
+ FOREIGN KEY (idFicha)
+ REFERENCES Fichas(numero_paciente)
+ );
+ 
+  CREATE TABLE IF NOT EXISTS Ficha_Consulta(
+ idFicha int,
+ idConsulta int,
+ PRIMARY KEY (idFicha, idConsulta),
+ FOREIGN KEY (idFicha)
+ REFERENCES Fichas(numero_paciente),
+ FOREIGN KEY (idConsulta)
+ REFERENCES Consultas(numeroConsulta)
+ );
+ 
+  CREATE TABLE IF NOT EXISTS Consulta_Medico(
+ idMedico	varchar(14),
+ idConsulta int,
+ PRIMARY KEY (idMedico, idConsulta),
+ FOREIGN KEY (idMedico) REFERENCES Medicos(CRM),
+ FOREIGN KEY (idConsulta) REFERENCES Consultas(numeroConsulta)
+ );
+ 
+  CREATE TABLE IF NOT EXISTS Consulta_Exame(
+ idConsulta int,
+ idExame int,
+ PRIMARY KEY (idConsulta, idExame),
+ FOREIGN KEY (idConsulta)
+ REFERENCES Consultas(numeroConsulta),
+ FOREIGN KEY (idExame) REFERENCES Exames(idExame)
+ );
+ 
+
+INSERT INTO Fichas (nome, rg, telefone, convenio, dataNascimento, sexo) VALUES
+('Paciente 1', '123456789', '1234567890', 'Convenio 1', '1990-01-01', 'M'),
+('Paciente 2', '234567890', '2345678901', 'Convenio 2', '1995-02-15', 'F'),
+('Paciente 3', '345678901', '3456789012', 'Convenio 3', '1987-05-20', 'M'),
+('Paciente 4', '456789012', '4567890123', 'Convenio 1', '1992-08-10', 'F'),
+('Paciente 5', '567890123', '5678901234', 'Convenio 4', '1980-11-30', 'M');
+INSERT INTO Enderecos (logradouro, cep, numero, bairro, cidade) VALUES
+('Rua A', '12345-678', '123', 'Bairro 1', 'Cidade 1'),
+('Rua B', '98765-432', '456', 'Bairro 2', 'Cidade 2'),
+('Rua C', '54321-876', '789', 'Bairro 3', 'Cidade 3'),
+('Rua D', '67890-123', '101', 'Bairro 4', 'Cidade 4'),
+('Rua E', '23456-789', '202', 'Bairro 5', 'Cidade 5');
+INSERT INTO Consultas (data, diagnostico) VALUES
+('2023-01-01', 'Diagnóstico 1'),
+('2023-02-15', 'Diagnóstico 2'),
+('2023-05-20', 'Diagnóstico 3'),
+('2023-08-10', 'Diagnóstico 4'),
+('2023-11-30', 'Diagnóstico 5');
+INSERT INTO Medicos (CRM, nome) VALUES
+('CRM12345', 'Médico 1'),
+('CRM23456', 'Médico 2'),
+('CRM34567', 'Médico 3'),
+('CRM45678', 'Médico 4'),
+('CRM56789', 'Médico 5');
+INSERT INTO Exames (exame, data) VALUES
+('Exame 1', '2023-01-01'),
+('Exame 2', '2023-02-15'),
+('Exame 3', '2023-05-20'),
+('Exame 4', '2023-08-10'),
+('Exame 5', '2023-11-30');
+
+ 
